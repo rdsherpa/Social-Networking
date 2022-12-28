@@ -20,12 +20,14 @@ const thoughtSchema = new Schema(
       type: String,
       required: true,
     },
-    reactions: [reactionsSchema],
+    reactions: [reactionSchema],
   },
   {
     toJSON: {
       getters: true,
     },
+    // prevents virtuals from creating duplicate of _id as `id`
+    id: false,
   }
 );
 

@@ -24,7 +24,4 @@ const formatDate = function (timestamp) {
   );
 };
 
-// Initialize our Thought model
-const Thought = model("thought", thoughtSchema);
-
 module.exports = formatDate;

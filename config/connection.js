@@ -4,7 +4,7 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/social-network",
   {
     useNewurlParser: true,
-    useUnifieldTopology: true,
+    useUnifiedTopology: true,
   },
   (err) => {
     if (err) throw err;
